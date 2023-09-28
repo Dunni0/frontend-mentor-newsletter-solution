@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        font-family: 'Roboto', sans-serif;
+        background-color:  hsl(234, 29%, 20%);
+        max-width: 1440px ;
+    }
+
+    h1{
+        margin-bottom: 0.8rem;
+    }
+
+    .container{
+        background-color:  hsl(0, 0%, 100%);
+        padding: 1rem;
+        max-width: 700px;
+        justify-items: center;
+        align-items: center;
+        margin: 2rem auto;
+        border: 2px solid ;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 1rem;
+        border-radius: 1rem;
+    }
+
+    .background_image{
+        max-width: 100%;
+    }
+    
+    .attribution { 
+        font-size: 11px;
+        text-align: center; 
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+
+    .first_container{
+        border: 2px solid red;
+    }
+
+    .first_container > .listed_item{
+        margin-top: 1rem;
+    }
+
+    form{
+        display: grid;
+        margin-top: 2rem;
+    }
+
+    form > label{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+
+    .label_text{
+        font-weight: bold;
+    }
+
+    .error{
+        color: red;
+        display: none;
+    }
+
+    form > input, form > .button {
+        margin-top: 0.5rem;
+        padding: 0.8rem;
+        border-radius: 0.2rem;
+    }
+
+    form > input{
+        /* outline: none ; */
+        border: 1px solid hsl(231, 7%, 60%);
+        /* background: transparent; */
+        /* background-color: hsl(4, 100%, 67%); */
+    }
+
+    form > .button{
+        background-color: hsl(234, 29%, 20%);
+        border: none;
+        color:  hsl(0, 0%, 100%);
+        transition: all 0.3s;
+    }
+
+    .button:hover{
+        cursor: pointer;
+        transition: all 0.3s;
+        background-image: linear-gradient(to right, hsl(4, 78%, 70%),hsl(4, 100%, 67%) );
+    }
+
+    .icon{
+        width: 0.8rem;
+    }

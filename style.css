@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&family=Roboto:wght@300&display=swap');
+    
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        font-family: Roboto;
+        background-color:  hsl(234, 29%, 20%);
+        max-width: 1440px;
+        height: 100%;
+    }
+
+    h1{
+        margin-bottom: 0.8rem;
+        font-weight: 700;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .container{
+        background-color:  hsl(0, 0%, 100%);
+        padding: 1rem;
+        max-width: 700px;
+        /* justify-items: center; */
+        align-items: center;
+        margin: 2rem auto;
+        border: 2px solid ;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 1rem;
+        border-radius: 1rem;
+        padding: 2rem;
+    }
+
+    .background_image{
+        max-width: 100%;
+    }
+    
+    .attribution { 
+        font-size: 11px;
+        text-align: center; 
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+
+    /* .first_container{
+        border: 2px solid red;
+    } */
+
+    .first_container > .listed_item{
+        margin-top: 1rem;
+    }
+
+    form{
+        display: grid;
+        margin-top: 2rem;
+    }
+
+    form > label{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+
+    .label_text{
+        font-weight: bold;
+    }
+
+    .error{
+        color: red;
+        display: none;
+    }
+
+    form > input, form > .button {
+        margin-top: 0.5rem;
+        padding: 0.8rem;
+        border-radius: 0.3rem;
+    }
+
+    form > input{
+        outline: none ;
+        border: 1px solid hsl(231, 7%, 60%);
+        background: transparent;
+    }
+
+    form > .button{
+        background-color:  hsl(234, 29%, 20%);
+        border: none;
+        color:  hsl(0, 0%, 100%);
+        transition: all 0.5s;
+    }
+
+    .button:hover{
+        cursor: pointer;
+        background-image: linear-gradient(to right, hsl(4, 78%, 70%),hsl(4, 100%, 67%) );
+    }
+
+    .icon{
+        width: 0.8rem;
+    }
+
+
+
+    /* success container */
+
+    .success_con{
+        background-color: hsl(0, 0%, 100%);
+        max-width: 350px;
+        padding: 2.5rem;
+        margin: 8rem auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: 2rem;
+        display: none ;
+    }
+
+    .success_icon{
+        width: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .success_h1{
+        letter-spacing: 1px;
+        line-height: 40px;
+    }
+
+    .success_btn{
+        width: 250px;
+        padding: 0.8rem;
+        margin: 1.5rem 0 auto;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: hsl(4, 100%, 67%);
+        color: hsl(0, 0%, 100%);
+    }
+
+    .success_btn:hover{
+        cursor: pointer;
+        background: linear-gradient(270deg, rgba(255,98,87,1) 33%, rgba(255,0,110,0.8) 100%);   
+    }
+
+    #span-email-placeholder{
+        font-weight: bold;
+    }
+
+    @media screen and (max-width: 395px ) {
+        /* form{
+            border: 2px solid red;
+        } */
+
+        body{
+            font-family: Roboto;
+            background-color:  hsl(234, 29%, 20%);
+            max-width: 395px;
+            /* height: 100%; */
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 0;
+            max-width: 100%;
+            border-radius: 0;
+        }
+
+        .first_container{
+            padding: 1.5rem
+        }
+
+        .background_image{
+            background-image: url("/assets/images/illustration-sign-up-mobile.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 0 0 1rem 1rem;
+        }
+
+        .success_con{
+            max-width: 300px;
+            border-radius: 0;
+        }
+
+        .success_btn{
+            max-width: 200px;
+        }
+
+    }
